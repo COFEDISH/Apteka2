@@ -224,7 +224,7 @@ class MainWindow(QMainWindow):
             self.drug_table.setItem(row, 2, QTableWidgetItem(item.get('Лекарство')))
             self.drug_table.setItem(row, 3, QTableWidgetItem(item.get('Производитель')))
             self.drug_table.setItem(row, 4, QTableWidgetItem(item.get('Дата производство')))
-            self.drug_table.setItem(row, 5, QTableWidgetItem(''.join(map(str, item.get('Наличие в аптеках')))))
+            self.drug_table.setItem(row, 5, QTableWidgetItem(''.join(map(str, item.get('Доступность в аптеках')))))
             self.drug_table.setItem(row, 6, QTableWidgetItem(str(item.get('Стоимость'))))
             self.drug_table.setItem(row, 7, QTableWidgetItem(str(item.get('Количество'))))
 
